@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, BuzzWords!</string>
+    <string name="header">Welcome, this is an art project yadda yadda yadda</string>
     <string name="app_name">BuzzWords</string>
+<string name="create">Create New Sentence</string>
+<string name="sub">Submit Words</string>
 </resources>

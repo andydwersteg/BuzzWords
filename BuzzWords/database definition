@@ -1,0 +1,18 @@
+tables: 
+
+Accounts
+	a_id int // (Primary id)
+	a_name varchar // (limited length)
+	a_strikes int // ? 3 then you're out ?
+	invites // could reduce the number of malicious users
+	
+Tracks:
+	t_id int
+	a_id int
+	word varchar
+	track blob
+	
+	word, t_id, a_id are primary ids
+	(each person can submit one word only once
+		only one "antibiotics" per person.
+	
