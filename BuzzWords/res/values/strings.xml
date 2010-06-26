@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="header">Welcome, this is an art project yadda yadda yadda</string>
+    <string name="header">Welcome, BuzzWords is an art project that creates BLANK from every sentence you write. To get started, type a sentence below, or login to submit your own recordings.</string>
     <string name="app_name">BuzzWords</string>
 <string name="create">Create New Sentence</string>
 <string name="sub">Submit Words</string>
