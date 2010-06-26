@@ -28,7 +28,7 @@ public class BuzzWords extends Activity {
 		    	String together = "";
 		    	for(String i : words) {
 		    		//get the audio for each word
-		    		together += i;
+		    		together += (i + "\n");
 		    	}
 				out.setText((CharSequence)together);   
 				return true;

@@ -1,18 +1,18 @@
-tables: 
 
-Accounts
-	a_id int // (Primary id)
-	a_name varchar // (limited length)
-	a_strikes int // ? 3 then you're out ?
-	invites // could reduce the number of malicious users
+create table Accounts (
+a_id int primary key auto_increment, 
+a_name varchar(50), 
+a_strikes int, 
+invites int);
 	
-Tracks:
-	t_id int
-	a_id int
-	word varchar
-	track blob
-	
-	word, t_id, a_id are primary ids
-	(each person can submit one word only once
-		only one "antibiotics" per person.
-	
+create table Tracks (
+t_id int, 
+a_id int, 
+word varchar(500), 
+track blob, 
+primary key (t_id, word));
+
+create table a_t_relation (
+account_id int references Accounts(a_id), 
+track_id int references Tracks(t_id), 
+primary key (account_id, track_id));	
